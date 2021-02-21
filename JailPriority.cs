@@ -42,14 +42,6 @@ namespace ACT_Plugin
         /// </summary>
         private void InitializeComponent()
         {
-            this.player1RadioButton = new System.Windows.Forms.RadioButton();
-            this.player2RadioButton = new System.Windows.Forms.RadioButton();
-            this.player3RadioButton = new System.Windows.Forms.RadioButton();
-            this.player4RadioButton = new System.Windows.Forms.RadioButton();
-            this.player5RadioButton = new System.Windows.Forms.RadioButton();
-            this.player6RadioButton = new System.Windows.Forms.RadioButton();
-            this.player7RadioButton = new System.Windows.Forms.RadioButton();
-            this.player8RadioButton = new System.Windows.Forms.RadioButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.player1TextBox = new System.Windows.Forms.TextBox();
             this.player2TextBox = new System.Windows.Forms.TextBox();
@@ -67,104 +59,25 @@ namespace ACT_Plugin
             this.tts1TextBox = new System.Windows.Forms.TextBox();
             this.tts2TextBox = new System.Windows.Forms.TextBox();
             this.tts3TextBox = new System.Windows.Forms.TextBox();
+            this.tts4TextBox = new System.Windows.Forms.TextBox();
+            this.tts5TextBox = new System.Windows.Forms.TextBox();
+            this.tts6TextBox = new System.Windows.Forms.TextBox();
+            this.tts7TextBox = new System.Windows.Forms.TextBox();
+            this.tts8TextBox = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.logsTextBox = new System.Windows.Forms.TextBox();
             this.infoLabel = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // player1RadioButton
-            // 
-            this.player1RadioButton.AutoSize = true;
-            this.player1RadioButton.Checked = true;
-            this.player1RadioButton.Location = new System.Drawing.Point(3, 14);
-            this.player1RadioButton.Name = "player1RadioButton";
-            this.player1RadioButton.Size = new System.Drawing.Size(14, 13);
-            this.player1RadioButton.TabIndex = 0;
-            this.player1RadioButton.TabStop = true;
-            this.player1RadioButton.UseVisualStyleBackColor = true;
-            this.player1RadioButton.CheckedChanged += new System.EventHandler(this.updatePlayerIndex);
-            // 
-            // player2RadioButton
-            // 
-            this.player2RadioButton.AutoSize = true;
-            this.player2RadioButton.Location = new System.Drawing.Point(3, 37);
-            this.player2RadioButton.Name = "player2RadioButton";
-            this.player2RadioButton.Size = new System.Drawing.Size(14, 13);
-            this.player2RadioButton.TabIndex = 1;
-            this.player2RadioButton.TabStop = true;
-            this.player2RadioButton.UseVisualStyleBackColor = true;
-            this.player2RadioButton.CheckedChanged += new System.EventHandler(this.updatePlayerIndex);
-            // 
-            // player3RadioButton
-            // 
-            this.player3RadioButton.AutoSize = true;
-            this.player3RadioButton.Location = new System.Drawing.Point(3, 60);
-            this.player3RadioButton.Name = "player3RadioButton";
-            this.player3RadioButton.Size = new System.Drawing.Size(14, 13);
-            this.player3RadioButton.TabIndex = 2;
-            this.player3RadioButton.TabStop = true;
-            this.player3RadioButton.UseVisualStyleBackColor = true;
-            this.player3RadioButton.CheckedChanged += new System.EventHandler(this.updatePlayerIndex);
-            // 
-            // player4RadioButton
-            // 
-            this.player4RadioButton.AutoSize = true;
-            this.player4RadioButton.Location = new System.Drawing.Point(3, 83);
-            this.player4RadioButton.Name = "player4RadioButton";
-            this.player4RadioButton.Size = new System.Drawing.Size(14, 13);
-            this.player4RadioButton.TabIndex = 3;
-            this.player4RadioButton.TabStop = true;
-            this.player4RadioButton.UseVisualStyleBackColor = true;
-            this.player4RadioButton.CheckedChanged += new System.EventHandler(this.updatePlayerIndex);
-            // 
-            // player5RadioButton
-            // 
-            this.player5RadioButton.AutoSize = true;
-            this.player5RadioButton.Location = new System.Drawing.Point(3, 106);
-            this.player5RadioButton.Name = "player5RadioButton";
-            this.player5RadioButton.Size = new System.Drawing.Size(14, 13);
-            this.player5RadioButton.TabIndex = 4;
-            this.player5RadioButton.TabStop = true;
-            this.player5RadioButton.UseVisualStyleBackColor = true;
-            this.player5RadioButton.CheckedChanged += new System.EventHandler(this.updatePlayerIndex);
-            // 
-            // player6RadioButton
-            // 
-            this.player6RadioButton.AutoSize = true;
-            this.player6RadioButton.Location = new System.Drawing.Point(3, 129);
-            this.player6RadioButton.Name = "player6RadioButton";
-            this.player6RadioButton.Size = new System.Drawing.Size(14, 13);
-            this.player6RadioButton.TabIndex = 5;
-            this.player6RadioButton.TabStop = true;
-            this.player6RadioButton.UseVisualStyleBackColor = true;
-            this.player6RadioButton.CheckedChanged += new System.EventHandler(this.updatePlayerIndex);
-            // 
-            // player7RadioButton
-            // 
-            this.player7RadioButton.AutoSize = true;
-            this.player7RadioButton.Location = new System.Drawing.Point(3, 152);
-            this.player7RadioButton.Name = "player7RadioButton";
-            this.player7RadioButton.Size = new System.Drawing.Size(14, 13);
-            this.player7RadioButton.TabIndex = 6;
-            this.player7RadioButton.TabStop = true;
-            this.player7RadioButton.UseVisualStyleBackColor = true;
-            this.player7RadioButton.CheckedChanged += new System.EventHandler(this.updatePlayerIndex);
-            // 
-            // player8RadioButton
-            // 
-            this.player8RadioButton.AutoSize = true;
-            this.player8RadioButton.Location = new System.Drawing.Point(3, 175);
-            this.player8RadioButton.Name = "player8RadioButton";
-            this.player8RadioButton.Size = new System.Drawing.Size(14, 13);
-            this.player8RadioButton.TabIndex = 7;
-            this.player8RadioButton.TabStop = true;
-            this.player8RadioButton.UseVisualStyleBackColor = true;
-            this.player8RadioButton.CheckedChanged += new System.EventHandler(this.updatePlayerIndex);
             // 
             // panel1
             // 
@@ -176,14 +89,6 @@ namespace ACT_Plugin
             this.panel1.Controls.Add(this.player6TextBox);
             this.panel1.Controls.Add(this.player7TextBox);
             this.panel1.Controls.Add(this.player8TextBox);
-            this.panel1.Controls.Add(this.player1RadioButton);
-            this.panel1.Controls.Add(this.player2RadioButton);
-            this.panel1.Controls.Add(this.player3RadioButton);
-            this.panel1.Controls.Add(this.player4RadioButton);
-            this.panel1.Controls.Add(this.player5RadioButton);
-            this.panel1.Controls.Add(this.player6RadioButton);
-            this.panel1.Controls.Add(this.player7RadioButton);
-            this.panel1.Controls.Add(this.player8RadioButton);
             this.panel1.Location = new System.Drawing.Point(3, 27);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(202, 211);
@@ -191,65 +96,65 @@ namespace ACT_Plugin
             // 
             // player1TextBox
             // 
-            this.player1TextBox.Location = new System.Drawing.Point(23, 11);
+            this.player1TextBox.Location = new System.Drawing.Point(12, 17);
             this.player1TextBox.Name = "player1TextBox";
-            this.player1TextBox.Size = new System.Drawing.Size(164, 20);
+            this.player1TextBox.Size = new System.Drawing.Size(176, 20);
             this.player1TextBox.TabIndex = 8;
             this.player1TextBox.TextChanged += new System.EventHandler(this.updatePlayers);
             // 
             // player2TextBox
             // 
-            this.player2TextBox.Location = new System.Drawing.Point(23, 34);
+            this.player2TextBox.Location = new System.Drawing.Point(12, 40);
             this.player2TextBox.Name = "player2TextBox";
-            this.player2TextBox.Size = new System.Drawing.Size(164, 20);
+            this.player2TextBox.Size = new System.Drawing.Size(176, 20);
             this.player2TextBox.TabIndex = 9;
             this.player2TextBox.TextChanged += new System.EventHandler(this.updatePlayers);
             // 
             // player3TextBox
             // 
-            this.player3TextBox.Location = new System.Drawing.Point(23, 57);
+            this.player3TextBox.Location = new System.Drawing.Point(12, 63);
             this.player3TextBox.Name = "player3TextBox";
-            this.player3TextBox.Size = new System.Drawing.Size(164, 20);
+            this.player3TextBox.Size = new System.Drawing.Size(176, 20);
             this.player3TextBox.TabIndex = 10;
             this.player3TextBox.TextChanged += new System.EventHandler(this.updatePlayers);
             // 
             // player4TextBox
             // 
-            this.player4TextBox.Location = new System.Drawing.Point(23, 80);
+            this.player4TextBox.Location = new System.Drawing.Point(12, 86);
             this.player4TextBox.Name = "player4TextBox";
-            this.player4TextBox.Size = new System.Drawing.Size(164, 20);
+            this.player4TextBox.Size = new System.Drawing.Size(176, 20);
             this.player4TextBox.TabIndex = 11;
             this.player4TextBox.TextChanged += new System.EventHandler(this.updatePlayers);
             // 
             // player5TextBox
             // 
-            this.player5TextBox.Location = new System.Drawing.Point(23, 103);
+            this.player5TextBox.Location = new System.Drawing.Point(12, 109);
             this.player5TextBox.Name = "player5TextBox";
-            this.player5TextBox.Size = new System.Drawing.Size(164, 20);
+            this.player5TextBox.Size = new System.Drawing.Size(176, 20);
             this.player5TextBox.TabIndex = 12;
             this.player5TextBox.TextChanged += new System.EventHandler(this.updatePlayers);
             // 
             // player6TextBox
             // 
-            this.player6TextBox.Location = new System.Drawing.Point(23, 126);
+            this.player6TextBox.Location = new System.Drawing.Point(12, 132);
             this.player6TextBox.Name = "player6TextBox";
-            this.player6TextBox.Size = new System.Drawing.Size(164, 20);
+            this.player6TextBox.Size = new System.Drawing.Size(176, 20);
             this.player6TextBox.TabIndex = 13;
             this.player6TextBox.TextChanged += new System.EventHandler(this.updatePlayers);
             // 
             // player7TextBox
             // 
-            this.player7TextBox.Location = new System.Drawing.Point(23, 148);
+            this.player7TextBox.Location = new System.Drawing.Point(12, 154);
             this.player7TextBox.Name = "player7TextBox";
-            this.player7TextBox.Size = new System.Drawing.Size(164, 20);
+            this.player7TextBox.Size = new System.Drawing.Size(176, 20);
             this.player7TextBox.TabIndex = 14;
             this.player7TextBox.TextChanged += new System.EventHandler(this.updatePlayers);
             // 
             // player8TextBox
             // 
-            this.player8TextBox.Location = new System.Drawing.Point(23, 171);
+            this.player8TextBox.Location = new System.Drawing.Point(12, 177);
             this.player8TextBox.Name = "player8TextBox";
-            this.player8TextBox.Size = new System.Drawing.Size(164, 20);
+            this.player8TextBox.Size = new System.Drawing.Size(176, 20);
             this.player8TextBox.TabIndex = 15;
             this.player8TextBox.TextChanged += new System.EventHandler(this.updatePlayers);
             // 
@@ -294,20 +199,30 @@ namespace ACT_Plugin
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.label9);
+            this.panel2.Controls.Add(this.label8);
+            this.panel2.Controls.Add(this.label7);
+            this.panel2.Controls.Add(this.label6);
+            this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.tts1TextBox);
             this.panel2.Controls.Add(this.tts2TextBox);
             this.panel2.Controls.Add(this.tts3TextBox);
+            this.panel2.Controls.Add(this.tts4TextBox);
+            this.panel2.Controls.Add(this.tts5TextBox);
+            this.panel2.Controls.Add(this.tts6TextBox);
+            this.panel2.Controls.Add(this.tts7TextBox);
+            this.panel2.Controls.Add(this.tts8TextBox);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Location = new System.Drawing.Point(211, 27);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(220, 86);
+            this.panel2.Size = new System.Drawing.Size(220, 211);
             this.panel2.TabIndex = 13;
             // 
             // tts1TextBox
             // 
-            this.tts1TextBox.Location = new System.Drawing.Point(54, 8);
+            this.tts1TextBox.Location = new System.Drawing.Point(30, 8);
             this.tts1TextBox.Name = "tts1TextBox";
             this.tts1TextBox.Size = new System.Drawing.Size(163, 20);
             this.tts1TextBox.TabIndex = 3;
@@ -316,7 +231,7 @@ namespace ACT_Plugin
             // 
             // tts2TextBox
             // 
-            this.tts2TextBox.Location = new System.Drawing.Point(54, 34);
+            this.tts2TextBox.Location = new System.Drawing.Point(30, 34);
             this.tts2TextBox.Name = "tts2TextBox";
             this.tts2TextBox.Size = new System.Drawing.Size(163, 20);
             this.tts2TextBox.TabIndex = 4;
@@ -325,7 +240,7 @@ namespace ACT_Plugin
             // 
             // tts3TextBox
             // 
-            this.tts3TextBox.Location = new System.Drawing.Point(54, 60);
+            this.tts3TextBox.Location = new System.Drawing.Point(30, 60);
             this.tts3TextBox.Name = "tts3TextBox";
             this.tts3TextBox.Size = new System.Drawing.Size(163, 20);
             this.tts3TextBox.TabIndex = 5;
@@ -337,31 +252,31 @@ namespace ACT_Plugin
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(3, 64);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(46, 13);
+            this.label5.Size = new System.Drawing.Size(22, 13);
             this.label5.TabIndex = 2;
-            this.label5.Text = "3rd TTS";
+            this.label5.Text = "3rd";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(3, 37);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(49, 13);
+            this.label4.Size = new System.Drawing.Size(25, 13);
             this.label4.TabIndex = 1;
-            this.label4.Text = "2nd TTS";
+            this.label4.Text = "2nd";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(3, 11);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(45, 13);
+            this.label3.Size = new System.Drawing.Size(21, 13);
             this.label3.TabIndex = 0;
-            this.label3.Text = "1st TTS";
+            this.label3.Text = "1st";
             // 
             // logsTextBox
             // 
-            this.logsTextBox.Location = new System.Drawing.Point(211, 119);
+            this.logsTextBox.Location = new System.Drawing.Point(15, 273);
             this.logsTextBox.MaxLength = 1000000;
             this.logsTextBox.Multiline = true;
             this.logsTextBox.Name = "logsTextBox";
@@ -375,11 +290,101 @@ namespace ACT_Plugin
             // infoLabel
             // 
             this.infoLabel.AutoSize = true;
-            this.infoLabel.Location = new System.Drawing.Point(506, 270);
+            this.infoLabel.Location = new System.Drawing.Point(12, 424);
             this.infoLabel.Name = "infoLabel";
             this.infoLabel.Size = new System.Drawing.Size(132, 13);
             this.infoLabel.TabIndex = 15;
             this.infoLabel.Text = "Discord: @Tarutella#3846";
+            // 
+            // textBox4
+            // 
+            this.tts4TextBox.Location = new System.Drawing.Point(30, 86);
+            this.tts4TextBox.Name = "tts4TextBox";
+            this.tts4TextBox.Size = new System.Drawing.Size(163, 20);
+            this.tts4TextBox.TabIndex = 6;
+            this.tts4TextBox.Text = "Fourth";
+            this.tts4TextBox.TextChanged += new System.EventHandler(this.updateTSS);
+            // 
+            // textBox5
+            // 
+            this.tts5TextBox.Location = new System.Drawing.Point(31, 112);
+            this.tts5TextBox.Name = "tts5TextBox";
+            this.tts5TextBox.Size = new System.Drawing.Size(163, 20);
+            this.tts5TextBox.TabIndex = 7;
+            this.tts5TextBox.Text = "First";
+            this.tts5TextBox.TextChanged += new System.EventHandler(this.updateTSS);
+            // 
+            // textBox6
+            // 
+            this.tts6TextBox.Location = new System.Drawing.Point(31, 138);
+            this.tts6TextBox.Name = "tts6TextBox";
+            this.tts6TextBox.Size = new System.Drawing.Size(163, 20);
+            this.tts6TextBox.TabIndex = 8;
+            this.tts6TextBox.Text = "Sixth";
+            this.tts6TextBox.TextChanged += new System.EventHandler(this.updateTSS);
+            // 
+            // textBox7
+            // 
+            this.tts7TextBox.Location = new System.Drawing.Point(30, 162);
+            this.tts7TextBox.Name = "tts7TextBox";
+            this.tts7TextBox.Size = new System.Drawing.Size(163, 20);
+            this.tts7TextBox.TabIndex = 9;
+            this.tts7TextBox.Text = "Seventh";
+            this.tts7TextBox.TextChanged += new System.EventHandler(this.updateTSS);
+            // 
+            // textBox8
+            // 
+            this.tts8TextBox.Location = new System.Drawing.Point(31, 188);
+            this.tts8TextBox.Name = "tts8TextBox    ";
+            this.tts8TextBox.Size = new System.Drawing.Size(163, 20);
+            this.tts8TextBox.TabIndex = 10;
+            this.tts8TextBox.Text = "Eighth";
+            this.tts8TextBox.TextChanged += new System.EventHandler(this.updateTSS);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(3, 89);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(22, 13);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "4th";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(3, 116);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(22, 13);
+            this.label6.TabIndex = 12;
+            this.label6.Text = "5th";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(3, 141);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(22, 13);
+            this.label7.TabIndex = 13;
+            this.label7.Text = "6th";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(3, 167);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(22, 13);
+            this.label8.TabIndex = 14;
+            this.label8.Text = "7th";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(3, 191);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(22, 13);
+            this.label9.TabIndex = 15;
+            this.label9.Text = "8th";
             // 
             // JailPriority
             // 
@@ -404,19 +409,6 @@ namespace ACT_Plugin
 
         }
 
-        private void updatePlayerIndex(object sender, EventArgs e)
-        {
-
-            RadioButton[] radios = panel1.Controls.OfType<RadioButton>().ToArray();
-            for (int i = 0; i < radios.Length; i++)
-            {
-                if (radios[i].Checked)
-                {
-                    yourIndex = i;
-                    break;
-                }
-            }
-        }
 
         #endregion
 
@@ -427,14 +419,6 @@ namespace ACT_Plugin
         }
         Label lblStatus;    // The status label that appears in ACT's Plugin tab
         string settingsFile = Path.Combine(ActGlobals.oFormActMain.AppDataFolder.FullName, "Config\\TitanJail.config.xml");
-        private RadioButton player5RadioButton;
-        private RadioButton player4RadioButton;
-        private RadioButton player6RadioButton;
-        private RadioButton player2RadioButton;
-        private RadioButton player7RadioButton;
-        private RadioButton player3RadioButton;
-        private RadioButton player8RadioButton;
-        private RadioButton player1RadioButton;
         private Panel panel1;
         private TextBox player8TextBox;
         private TextBox player7TextBox;
@@ -452,12 +436,22 @@ namespace ACT_Plugin
         private Label label5;
         private Label label4;
         private Label label3;
-        private TextBox tts3TextBox;
-        private TextBox tts2TextBox;
         private TextBox tts1TextBox;
+        private TextBox tts2TextBox;
+        private TextBox tts3TextBox;
+        private TextBox tts4TextBox;
+        private TextBox tts5TextBox;
+        private TextBox tts6TextBox;
+        private TextBox tts7TextBox;
+        private TextBox tts8TextBox;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private TextBox logsTextBox;
         private Label infoLabel;
+        private Label label9;
+        private Label label8;
+        private Label label7;
+        private Label label6;
+        private Label label1;
         SettingsSerializer xmlSettings;
 
         #region IActPluginV1 Members
@@ -506,13 +500,16 @@ namespace ACT_Plugin
                 logsTextBox.Text += "\r\n" + "-[Incorrect name/s in priority list!]-";
                 return;
             }
+
             for (int i = 0; i < players.Count; i++)
             {
                 if (orderPlayers.Contains(players[i]))
                 {
+                    var gaoledPlayer = order[i];
+                    ActGlobals.oFormActMain.TTS(gaoledPlayer);
+
                     if (players[i] == players[yourIndex])
                     {
-                        ActGlobals.oFormActMain.TTS(order[y]);
                         logsTextBox.Text += "\r\n" + "---[" + (i + 1) + "]---[" + players[i] + "]------>-----" + order[y] + "---<--[YOU]";
                     }
                     else
@@ -551,11 +548,6 @@ namespace ACT_Plugin
                     {
                         if (xReader.NodeType == XmlNodeType.Element)
                         {
-                            if (xReader.LocalName == "You")
-                            {
-                                yourIndex = xReader.ReadElementContentAsInt();
-                                panel1.Controls.OfType<RadioButton>().ToArray()[yourIndex].Checked = true;
-                            }
                             if (xReader.Name == "Player")
                             {
                                 String line = xReader.ReadElementContentAsString();
@@ -718,6 +710,5 @@ namespace ACT_Plugin
                 order.Add(Order[i].Text);
             }
         }
-
     }
 }
